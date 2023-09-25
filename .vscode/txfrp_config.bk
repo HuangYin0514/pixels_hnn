@@ -1,0 +1,20 @@
+{
+    "name": "sftp-config",
+    "host": "txfrp",
+    "protocol": "sftp",
+    "username": "lbu",
+    "password":"aa107132",
+    "port": 6000,
+    "remotePath": "/home/lbu/project/PINN_DE",
+    "uploadOnSave": false,
+    "useTempFile": false,
+    "openSsh": false,
+    "ignore": [
+        "**/.vscode/**",
+        "**/.git/**",
+        "**/.DS_Store",
+        "**/outputs/**",
+        "**.pyc",
+        "temp_training_model_*"
+    ]
+}
