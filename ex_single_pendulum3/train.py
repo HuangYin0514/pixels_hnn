@@ -46,7 +46,7 @@ def brain(config, logger, dataset_path, outputs_path):
 
         if step > 100 and train_loss.item() < min(stats["train_loss"][:-1]):
             logger.debug("best step is: {}, the loss is: {:.4e}".format(step, train_loss.item()))
-            model_path = os.path.join(outputs_path, "pixels-hnn2.tar")
+            model_path = os.path.join(outputs_path, "model.tar")
             torch.save(model.state_dict(), model_path)
 
         if step % config.print_every == 0:
